@@ -1,0 +1,33 @@
+1. container - input,submit, p
+
+2. p - position abs, disp -none, bottom --30px
+
+3. inside p add empty span - for strengh
+
+4 . getinput and msg  elment:         
+
+var pass = document.getElementById("password");
+ var msg = document.getElementById("message");
+
+
+5. conditon to display
+
+    if(pass.value.length>0){
+
+                msg.style.display = "block";
+            }
+
+             else{
+
+                msg.style.display = "none";
+
+            }
+
+6. consition for strength
+
+    if(pass.value.length < 4){
+
+                str.innerHTML = "weak";
+                pass.style.borderColor= "red"
+                msg.style.color= "red"
+            }
